@@ -1,0 +1,479 @@
+/* =========================================================
+   RESPONSIVE CSS
+========================================================= */
+
+
+/* =========================================================
+   1400px
+========================================================= */
+
+@media screen and (max-width: 1400px){
+
+    .navbar,
+    .blogs,
+    .divider,
+    .footer{
+        padding-left: 6rem;
+        padding-right: 6rem;
+    }
+
+    .hero h1{
+        font-size: 140px;
+    }
+
+    .blog-cards{
+        gap: 24px;
+    }
+
+}
+
+
+
+/* =========================================================
+   1200px
+========================================================= */
+
+@media screen and (max-width: 1200px){
+
+    .navbar,
+    .blogs,
+    .divider,
+    .footer{
+        padding-left: 4rem;
+        padding-right: 4rem;
+    }
+
+    .hero h1{
+        font-size: 110px;
+    }
+
+    .blog-cards{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .blog-card{
+        width: 45%;
+        max-width: 420px;
+    }
+
+    .footer{
+        height: auto;
+        padding-bottom: 5rem;
+    }
+
+    .footer-content{
+        flex-wrap: wrap;
+        gap: 60px;
+    }
+
+    .newsletter{
+        max-width: 100%;
+    }
+
+}
+
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media screen and (max-width: 992px){
+
+    .navbar,
+    .blogs,
+    .divider,
+    .footer{
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+
+
+    /* =========================
+       NAVBAR
+    ========================= */
+
+    .nav-links{
+        display: none;
+    }
+
+    .nav-btn{
+        display: none;
+    }
+
+    .menu-icon{
+        display: block;
+    }
+
+    .menu-icon i{
+        font-size: 32px;
+        color: var(--white-color);
+    }
+
+
+    /* =========================
+       HERO
+    ========================= */
+
+    .hero{
+        margin-top: 5rem;
+    }
+
+    .hero h1{
+        font-size: 82px;
+        line-height: 110%;
+        letter-spacing: 2px;
+    }
+
+
+    /* =========================
+       FILTER
+    ========================= */
+
+    .blog-filter{
+        flex-wrap: wrap;
+        gap: 14px;
+        margin-top: 5rem;
+        margin-bottom: 3rem;
+    }
+
+
+    /* =========================
+       BLOGS
+    ========================= */
+
+    .blog-cards{
+        justify-content: center;
+        gap: 24px;
+    }
+
+    .blog-card{
+        width: 100%;
+        max-width: 520px;
+    }
+
+    .blog-card img{
+        aspect-ratio: 16 / 10;
+        height: auto;
+    }
+
+    .card-content h3{
+        font-size: 28px;
+    }
+
+
+    /* =========================
+       FOOTER
+    ========================= */
+
+    .footer{
+        margin-top: 5rem;
+    }
+
+    .footer-content{
+        flex-wrap: wrap;
+        gap: 50px;
+    }
+
+    .newsletter{
+        width: 100%;
+    }
+
+}
+
+
+
+/* =========================================================
+   MOBILE LARGE
+========================================================= */
+
+@media screen and (max-width: 768px){
+
+    .navbar,
+    .blogs,
+    .divider,
+    .footer{
+        padding-left: 1.25rem;
+        padding-right: 1.25rem;
+    }
+
+
+    /* =========================
+       NAVBAR
+    ========================= */
+
+    .navbar{
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+    }
+
+    .logo img{
+        width: 120px;
+    }
+
+    .menu-icon i{
+        font-size: 28px;
+    }
+
+
+    /* =========================
+       HERO
+    ========================= */
+
+    .hero{
+        margin-top: 4rem;
+    }
+
+    .hero h1{
+        font-size: 58px;
+        line-height: 120%;
+        letter-spacing: 1px;
+    }
+
+
+    /* =========================
+       FILTER
+    ========================= */
+
+    .blog-filter{
+        margin-top: 4rem;
+        margin-bottom: 3rem;
+        gap: 10px;
+    }
+
+    .filter-btn{
+        padding: 10px 18px;
+        font-size: 14px;
+    }
+
+
+    /* =========================
+       BLOG CARD
+    ========================= */
+
+    .blog-cards{
+        gap: 20px;
+    }
+
+    .blog-card{
+        max-width: 100%;
+        border-radius: 18px;
+    }
+
+    .blog-card img{
+        width: 100%;
+        aspect-ratio: 16 / 10;
+        height: auto;
+    }
+
+    .card-content{
+        padding: 20px;
+    }
+
+    .card-content h3{
+        font-size: 24px;
+        line-height: 130%;
+    }
+
+
+    /* =========================
+       DIVIDER
+    ========================= */
+
+    .divider{
+        margin: 5rem 0;
+    }
+
+
+    /* =========================
+       FOOTER
+    ========================= */
+
+    .footer{
+        padding-bottom: 6rem;
+    }
+
+    .footer-content{
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .newsletter{
+        width: 100%;
+    }
+
+    .newsletter h3{
+        font-size: 26px;
+    }
+
+    .newsletter form{
+        flex-direction: column;
+        gap: 14px;
+    }
+
+    .newsletter input,
+    .newsletter button{
+        width: 100%;
+    }
+
+
+    /* =========================
+       BG LOGO
+    ========================= */
+
+    .body-bg-logo img{
+        width: 180vw;
+        max-width: none;
+    }
+
+}
+
+
+
+/* =========================================================
+   MOBILE SMALL
+========================================================= */
+
+@media screen and (max-width: 480px){
+
+    .navbar,
+    .blogs,
+    .divider,
+    .footer{
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+
+    /* =========================
+       NAVBAR
+    ========================= */
+
+    .logo img{
+        width: 105px;
+    }
+
+    .menu-icon i{
+        font-size: 26px;
+    }
+
+
+    /* =========================
+       HERO
+    ========================= */
+
+    .hero{
+        margin-top: 3rem;
+    }
+
+    .hero h1{
+        font-size: 38px;
+        line-height: 120%;
+    }
+
+
+    /* =========================
+       FILTER
+    ========================= */
+
+    .blog-filter{
+        justify-content: center;
+        margin-top: 3rem;
+        margin-bottom: 2.5rem;
+    }
+
+    .filter-btn{
+        padding: 8px 14px;
+        font-size: 12px;
+    }
+
+
+    /* =========================
+       BLOG CARD
+    ========================= */
+
+    .blog-card{
+        border-radius: 16px;
+    }
+
+    .blog-card img{
+        aspect-ratio: 16 / 10;
+    }
+
+    .card-content{
+        padding: 16px;
+    }
+
+    .card-tag{
+        font-size: 12px;
+        padding: 7px 12px;
+    }
+
+    .card-content h3{
+        font-size: 18px;
+        line-height: 130%;
+        margin-bottom: 12px;
+    }
+
+    .card-content p{
+        font-size: 12px;
+    }
+
+
+    /* =========================
+       DIVIDER
+    ========================= */
+
+    .divider{
+        margin: 4rem 0;
+        gap: 12px;
+    }
+
+
+    /* =========================
+       FOOTER
+    ========================= */
+
+    .footer{
+        margin-top: 4rem;
+        padding-bottom: 5rem;
+    }
+
+    .footer-content{
+        gap: 28px;
+    }
+
+    .footer-column h4{
+        font-size: 15px;
+    }
+
+    .footer-column ul li{
+        margin-bottom: 12px;
+    }
+
+    .footer-column ul li a{
+        font-size: 13px;
+    }
+
+    .newsletter h3{
+        font-size: 20px;
+        line-height: 140%;
+    }
+
+    .newsletter input,
+    .newsletter button{
+        padding: 14px;
+    }
+
+
+    /* =========================
+       BACKGROUND LOGO
+    ========================= */
+
+    .body-bg-logo img{
+        width: 220vw;
+        max-width: none;
+    }
+
+}

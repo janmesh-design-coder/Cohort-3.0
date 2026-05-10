@@ -1,0 +1,351 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root{
+    --bg-black: #000000;
+    --primary-orange: #FE4100;
+    --button-bg: #1A1A1A;
+    --gray-color: #525252;
+    --white-color: #FFFFFF;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  min-height: 100vh;
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-size: 16px;
+  color: var(--white-color);
+  background: linear-gradient(
+        180deg,
+        #000000 0%,
+        #000000 60%,
+        #FE4100 92%,
+        #FFD28B 100%
+    );
+}
+
+* Background Logo */
+
+.body-bg-logo{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100vw;
+
+    pointer-events: none;
+    z-index: 1;
+    line-height: 0;
+}
+
+.body-bg-logo img{
+    width: 100vw;
+    min-width: 100;
+    opacity: 0.12;
+}
+
+/* =========================================================================== */
+
+/* ========================= NAVBAR ========================= */
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.25rem 12rem;
+}
+
+.logo img{
+    width: 140px;
+}
+
+/* Nav Links */
+
+.nav-links{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    list-style: none;
+}
+
+.nav-links a{
+    text-decoration: none;
+    color: var(--white-color);
+    font-size: 16px;
+    font-weight: 400;
+    padding: 10px 18px;
+    border-radius: 999px;
+    transition:all 0.6s ease-in-out;
+    border: 1px solid transparent;
+}
+
+/* Right Side */
+
+.nav-right{
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+
+/* Hover Effect */
+
+.nav-links a:hover,
+.nav-links a.active{
+    background-color: var(--primary-orange);
+    border: 1px solid var(--white-color);
+}
+
+.nav-btn{
+    background-color: var(--button-bg);
+    color: var(--white-color);
+    border: none;
+    padding: 16px 24px;
+    border-radius: 8px;
+    font-size: 14px;
+    cursor: pointer;
+    transition:all 0.3s ease-in-out;
+}
+
+.nav-btn:hover{
+    background-color: var(--primary-orange);
+    border-color: var(--primary-orange);
+}
+
+/* Hamburger */
+
+.menu-icon{
+    display: none;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+/* ========================= HERO SECTION ========================= */
+
+.hero{
+    text-align: center;
+    margin-top: 8rem;
+}
+
+.hero h1{
+    font-family: raleway, sans-serif;
+    font-size: 198px;
+    font-weight: 600;
+    letter-spacing: 5px;
+    line-height: auto;
+}
+
+/* ========================= BLOG Section ========================= */
+
+/* ---------------------Filters--------------------- */
+.blogs{
+    padding: 0 12rem;
+}
+.blog-filter{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+    margin-top: 8rem;
+    margin-bottom: 4rem;
+}
+
+.filter-btn{
+    background-color: var(--button-bg);
+    color: var(--white-color);
+    border: none;
+    padding: 12px 22px;
+    border-radius: 999px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.filter-btn:hover{
+    background-color: var(--primary-orange);
+}
+
+.active-filter{
+    background-color: var(--primary-orange);
+}
+
+
+/* --------------------- Blog Cards --------------------- */
+
+.blog-cards{
+    display: flex;
+    justify-content: space-between;
+    gap: 32px;
+}
+
+.blog-card{
+    background-color: #0B0B0B;
+    border-radius: 24px;
+    overflow: hidden;
+}
+
+.blog-card img{
+    width: 100%;
+    height: 260px;
+    object-fit: cover;
+    background-repeat: no-repeat;
+}
+
+.card-content{
+    padding: 24px;
+}
+
+.card-tag{
+    display: inline-block;
+    background-color: rgba(254, 65, 0, 0.15);
+    color: var(--primary-orange);
+    padding: 8px 14px;
+    border-radius: 999px;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+.card-content h3{
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 120%;
+    margin-bottom: 18px;
+}
+
+.card-content p{
+    color: var(--gray-color);
+    font-size: 14px;
+}
+
+/* --------------------- divider --------------------- */
+
+.divider{
+    padding: 0 12rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+    margin: 8rem 0;
+}
+
+.line{
+    width: 100%;
+    max-width: 600px;
+    height: 1px;
+    background-color: #2A2A2A;
+}
+
+.divider img{
+    width: 20px;
+    opacity: 0.5;
+}
+
+/* ========================= FOOTER ========================= */
+
+.footer{
+    position: relative;
+    margin-top: 8rem;
+    overflow: hidden;
+    height: 300px;
+    padding: 0 12rem;
+}
+
+.footer-content{
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    position: relative;
+    z-index: 2;
+}
+
+.footer-column h4{
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 24px;
+    opacity: 0.5;
+}
+
+.footer-column ul{
+    list-style: none;
+}
+
+.footer-column ul li{
+    margin-bottom: 14px;
+}
+
+.footer-column ul li a{
+    text-decoration: none;
+    color: var(--white-color);
+    transition: 0.3s ease;
+}
+
+.footer-column ul li a:hover{
+    color: #FFD28B;
+}
+
+
+/* Social Icons */
+
+.social-icons{
+    display: flex;
+    align-items: center;
+    gap: 18px;
+}
+
+.social-icons img{
+    width: 22px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.social-icons img:hover{
+    transform: translateY(-4px);
+}
+
+
+/* Newsletter */
+
+.newsletter{
+    max-width: 420px;
+}
+
+.newsletter h3{
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 130%;
+    margin-bottom: 24px;
+}
+
+.newsletter form{
+    display: flex;
+    gap: 12px;
+}
+
+.newsletter input{
+    flex: 1;
+    border: none;
+    outline: none;
+    padding: 16px 18px;
+    border-radius: 12px;
+    background-color: rgba(255,255,255,0.12);
+    color: var(--white-color);
+}
+
+.newsletter input::placeholder{
+    color: rgba(255,255,255,0.6);
+}
+
+.newsletter button{
+    border: none;
+    padding: 16px 24px;
+    border-radius: 12px;
+    background-color: rgba(255,255,255,0.2);
+    color: var(--white-color);
+    cursor: pointer;
+}
