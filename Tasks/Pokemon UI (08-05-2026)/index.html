@@ -1,85 +1,76 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Pokemon</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.css">
-</head>
-<body>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.css"
+    />
+  </head>
+  <body>
     <header>
+      <!-- LEFT -->
+      <div class="menu-btn">
+        <i class="ri-menu-line"></i>
+      </div>
 
-    <!-- LEFT -->
-        <div class="menu-btn">
-            <i class="ri-menu-line"></i>
-        </div>
+      <!-- CENTER -->
+      <div class="logo">
+        <img src="./images/pokemon-logo.svg" alt="" />
+      </div>
 
-        <!-- CENTER -->
-        <div class="logo">
-            <img src="./images/pokemon-logo.svg" alt="">
-        </div>
-
-        <!-- RIGHT -->
-        <div class="theme-btn">
-            <i class="ri-sun-line"></i>
-        </div>
-
-</header>
-<!-- SEARCH SECTION -->
-<section class="search-section">
-
-    <!-- SEARCH BOX -->
-    <div class="search-box">
-
+      <!-- RIGHT -->
+      <div class="theme-btn">
+        <i class="ri-sun-line"></i>
+      </div>
+    </header>
+    <!-- SEARCH SECTION -->
+    <section class="search-section">
+      <!-- SEARCH BOX -->
+      <div class="search-box">
         <i class="ri-search-line"></i>
 
-        <input
-        type="text"
-        placeholder="Search for a Pokémon..."
-        >
+        <input type="text" placeholder="Search for a Pokémon..." />
+      </div>
 
-    </div>
-
-    <!-- FILTER AREA -->
-    <div class="filter-area">
-
+      <!-- FILTER AREA -->
+      <div class="filter-area">
         <button class="filter-btn">
-            Filter by types (1)
+          Filter by types (1)
 
-            <i class="ri-arrow-down-s-line"></i>
+          <i class="ri-arrow-down-s-line"></i>
         </button>
 
         <button class="sort-btn">
-            <i class="ri-sort-desc"></i>
+          <i class="ri-sort-desc"></i>
         </button>
+      </div>
+    </section>
 
-    </div>
+    <!-- CARD SECTION -->
+    <section class="card-section">
+      <!-- ================= CARD 1 ================= -->
 
-</section>
-
-
-
-<!-- CARD SECTION -->
-<section class="card-section">
-
-    <!-- CARDs -->
-    <div class="pokemon-card">
-
+      <div class="pokemon-card grass-card">
         <!-- TOP -->
         <div class="card-top">
+          <span>#0908</span>
 
-            <span>#0908</span>
-
-            <button class="heart-btn">
-                <i class="ri-heart-line"></i>
-            </button>
-
+          <button class="heart-btn">
+            <i class="ri-heart-line"></i>
+          </button>
         </div>
 
         <!-- IMAGE -->
         <div class="pokemon-image">
-            <img src="./images/Meowscarada.png" alt="">
+          <div class="pokemon-type-icon grass">
+            <img src="./icons/grass.svg" alt="Grass" />
+          </div>
+
+          <img src="./images/Meowscarada.png" alt="Meowscarada" />
         </div>
 
         <!-- NAME -->
@@ -87,128 +78,190 @@
 
         <!-- BOTTOM -->
         <div class="card-bottom">
+          <div class="type grass">
+            <img src="./icons/grass.svg" alt="Grass" />
+            <span>GRASS</span>
+          </div>
 
-            <div class="type grass">
-                GRASS
-            </div>
-
-            <button class="arrow-btn">
-                <i class="ri-arrow-right-line"></i>
-            </button>
-
+          <button class="arrow-btn">
+            <i class="ri-arrow-right-line"></i>
+          </button>
         </div>
+      </div>
 
-    </div>
-    
-    <div class="pokemon-card">
+      <!-- ================= CARD 2 ================= -->
 
+      <div class="pokemon-card steel-card">
         <!-- TOP -->
         <div class="card-top">
+          <span>#0624</span>
 
-            <span>#0908</span>
-
-            <button class="heart-btn">
-                <i class="ri-heart-line"></i>
-            </button>
-
+          <button class="heart-btn">
+            <i class="ri-heart-line"></i>
+          </button>
         </div>
 
         <!-- IMAGE -->
         <div class="pokemon-image">
-            <img src="./images/Meowscarada.png" alt="">
+          <div class="pokemon-type-icon steel">
+            <img src="./icons/steel.svg" alt="Steel" />
+          </div>
+
+          <img src="./images/Pawniard_1.png" alt="Pawniard" />
         </div>
 
         <!-- NAME -->
-        <h2>Meowscarada</h2>
+        <h2>Pawniard</h2>
 
         <!-- BOTTOM -->
         <div class="card-bottom">
+          <div class="type steel">
+            <img src="./icons/steel.svg" alt="Steel" />
+            <span>DARK / STEEL</span>
+          </div>
 
-            <div class="type grass">
-                GRASS
-            </div>
-
-            <button class="arrow-btn">
-                <i class="ri-arrow-right-line"></i>
-            </button>
-
+          <button class="arrow-btn">
+            <i class="ri-arrow-right-line"></i>
+          </button>
         </div>
+      </div>
 
-    </div>
+      <!-- ================= CARD 3 ================= -->
 
-    <div class="pokemon-card">
-
+      <div class="pokemon-card fire-card">
         <!-- TOP -->
         <div class="card-top">
+          <span>#0229</span>
 
-            <span>#0908</span>
-
-            <button class="heart-btn">
-                <i class="ri-heart-line"></i>
-            </button>
-
+          <button class="heart-btn">
+            <i class="ri-heart-line"></i>
+          </button>
         </div>
 
         <!-- IMAGE -->
         <div class="pokemon-image">
-            <img src="./images/Meowscarada.png" alt="">
+          <div class="pokemon-type-icon fire">
+            <img src="./icons/fire.svg" alt="Fire" />
+          </div>
+
+          <img src="./images/Houndoom.png" alt="Houndoom" />
         </div>
 
         <!-- NAME -->
-        <h2>Meowscarada</h2>
+        <h2>Houndoom</h2>
 
         <!-- BOTTOM -->
         <div class="card-bottom">
+          <div class="type fire">
+            <img src="./icons/fire.svg" alt="Fire" />
+            <span>DARK / FIRE</span>
+          </div>
 
-            <div class="type grass">
-                GRASS
-            </div>
-
-            <button class="arrow-btn">
-                <i class="ri-arrow-right-line"></i>
-            </button>
-
+          <button class="arrow-btn">
+            <i class="ri-arrow-right-line"></i>
+          </button>
         </div>
+      </div>
 
-    </div>
+      <!-- ================= CARD 4 ================= -->
 
-    <div class="pokemon-card">
-
+      <div class="pokemon-card psychic-card">
         <!-- TOP -->
         <div class="card-top">
+          <span>#0686</span>
 
-            <span>#0908</span>
-
-            <button class="heart-btn">
-                <i class="ri-heart-line"></i>
-            </button>
-
+          <button class="heart-btn">
+            <i class="ri-heart-line"></i>
+          </button>
         </div>
 
         <!-- IMAGE -->
         <div class="pokemon-image">
-            <img src="./images/Meowscarada.png" alt="">
+          <div class="pokemon-type-icon psychic">
+            <img src="./icons/psychic.svg" alt="Psychic" />
+          </div>
+
+          <img src="./images/Inkay.png" alt="Inkay" />
         </div>
 
         <!-- NAME -->
-        <h2>Meowscarada</h2>
+        <h2>Inkay</h2>
 
         <!-- BOTTOM -->
         <div class="card-bottom">
+          <div class="type psychic">
+            <img src="./icons/psychic.svg" alt="Psychic" />
+            <span>DARK / PSYCHIC</span>
+          </div>
 
-            <div class="type grass">
-                GRASS
-            </div>
+          <button class="arrow-btn">
+            <i class="ri-arrow-right-line"></i>
+          </button>
+        </div>
+      </div>
+    </section>
 
-            <button class="arrow-btn">
-                <i class="ri-arrow-right-line"></i>
-            </button>
-
+    <!-- features-section -->
+    <section class="features-section">
+      <div class="feature-item">
+        <div class="feature-icon blue">
+          <img src="./images/explore.svg" alt="" />
         </div>
 
-    </div>
+        <div class="feature-content">
+          <h3>Explore</h3>
+          <p>Discover all your favorite Pokémon</p>
+        </div>
+      </div>
 
-</section>
-    
-</body>
+      <div class="feature-divider"></div>
+
+      <div class="feature-item">
+        <div class="feature-icon green">
+          <img src="./images/Leaf.svg" alt="" />
+        </div>
+
+        <div class="feature-content">
+          <h3>Filter</h3>
+          <p>Find Pokémon by types and abilities</p>
+        </div>
+      </div>
+
+      <div class="feature-divider"></div>
+
+      <div class="feature-item">
+        <div class="feature-icon yellow">
+          <img src="./images/star.svg" alt="" />
+        </div>
+
+        <div class="feature-content">
+          <h3>Collection</h3>
+          <p>Save and manage your collection</p>
+        </div>
+      </div>
+
+      <div class="feature-divider"></div>
+
+      <div class="feature-item">
+        <div class="feature-icon purple">
+          <img src="./images/states.svg" alt="" />
+        </div>
+
+        <div class="feature-content">
+          <h3>Stats</h3>
+          <p>View stats and learn about Pokémon</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ---footer--- -->
+    <footer>
+        <div class="footer-divider"></div>
+        <div>
+            <img src="./Icons/Poké_Ball_footer.svg" alt="">
+            <p>&copy; 2026 Pokemon. All rights reserved.</p>
+        </div>
+      
+    </footer>
+  </body>
 </html>
