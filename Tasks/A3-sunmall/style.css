@@ -231,7 +231,7 @@ body{
 .hero-section{
     padding: 40px 0 60px;
     position: relative;
-    overflow: hidden;
+    padding-bottom: 10rem; /* overlap ke liye space */
 }
 
 .hero-wrapper{
@@ -419,10 +419,19 @@ body{
 
 .hero-image-area{
     width: 40%;
-    position: relative;
+
+    position: absolute;
+
+    left: 50%;
+    top: 2rem;
+
+    transform: translateX(-50%);
+
     display: flex;
     align-items: center;
     justify-content: center;
+
+    z-index: 10;
 }
 
 /* =========================
@@ -441,6 +450,9 @@ body{
 .circle-1{
     width: 36rem;
     height: 40rem;
+    position: absolute;
+    top: 0;
+    left: 30%;
 
     background: rgba(213, 225, 183, 0.45);
 
@@ -454,6 +466,9 @@ body{
 .circle-2{
     width: 35rem;
     height: 30rem;
+    position: absolute;
+    top: 0;
+    left: 30%;
 
     background: rgba(196, 214, 157, 0.55);
 
@@ -463,26 +478,28 @@ body{
 }
 
 .main-chips{
-    width: 900px;
-    position: relative;
-    z-index: 2;
-    filter: drop-shadow(0px 40px 40px rgba(0, 0, 0, 0.40));
+    width: 750px;
+    position: absolute;
+    top: 0;
+    left: 10%;
+    z-index: 12;
+    filter: drop-shadow(0px 40px 40px rgba(0,0,0,0.35));
     transform: rotate(-5deg);
 }
 
 .crispy-label{
     width: 400px;
     position: absolute;
-    left: -30px;
-    bottom: 250px;
-    z-index: 3;
+    top: 250px;
+    left: 0px;
+    z-index: 100
 }
 
 .triangle-shape{
     width: 60px;
     position: absolute;
-    top: -10px;
-    right: 50px;
+    top: 0px;
+    right: -80px;
 }
 
 /* =========================
@@ -490,7 +507,7 @@ body{
 ========================= */
 
 .hero-right-info{
-    width: 22%;
+    width: 20%;
     position: relative;
 
     display: flex;
@@ -586,7 +603,10 @@ body{
 ========================= */
 
 .flavour-section{
-    z-index: -1;
+    position: relative;
+    z-index: 2;
+    margin-top: -1rem; /* upar kheecho */
+
 }
 
 .flavour-wrapper{
@@ -594,7 +614,7 @@ body{
 
     border-radius: 2.5rem;
 
-    padding: 2.2rem;
+    padding: 3rem 2rem;
 
     display: flex;
     align-items: center;
