@@ -1,4 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+@font-face {
+    font-family: "Prevalent";
+    src: url("./fonts/Prevalent-Regular.otf") format("opentype");
+}
+
+
 
 
 
@@ -38,7 +46,7 @@
 body{
   width: 100%;
   min-height: 100vh;
-  font-family: "Inter", sans-serif;
+  font-family: "Poppins", sans-serif;
   font-optical-sizing: auto;
   font-size: 16px;
   background-color: var(--cream);
@@ -51,9 +59,7 @@ body{
 
 /* ===================================================================== */
 
-/* =========================
-   HEADER / NAVBAR
-========================= */
+/* ========================= HEADER / NAVBAR ========================= */
 
 .header{
     padding: 0 0 32px 0;
@@ -91,6 +97,7 @@ body{
 .nav-links a{
     text-decoration: none;
     font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
     font-size: 20px;
     letter-spacing: 1px;
     color: #111111;
@@ -165,7 +172,7 @@ body{
     font-size: 16px;
     font-weight: 400;
     color: #222;
-    font-family: sans-serif;
+    font-family: "Poppins", sans-serif;
 }
 
 .search-box input::placeholder{
@@ -190,6 +197,7 @@ body{
     width: 42px;
     height: 42px;
 
+    font-weight: 600;
     border: none;
     background: transparent;
 
@@ -272,7 +280,7 @@ body{
 }
 
 .hero-heading{
-    font-family: "Prevalent";
+    font-family: "Prevalent", sans-serif;
     font-size: 100px;
     font-weight: 400;
     line-height: 0.95;
@@ -305,6 +313,10 @@ body{
 }
 
 .add-cart-btn{
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    letter-spacing: 1px;
+    font-size: 24px;
     padding: 16px 32px 16px 16px;
     border: none;
     border-radius: 999px;
@@ -313,8 +325,6 @@ body{
     display: flex;
     align-items: center;
     gap: 16px;
-    font-size: 16px;
-    font-weight: 600;
     cursor: pointer;
 }
 
@@ -361,13 +371,14 @@ body{
 .hero-features{
     display: flex;
     align-items: center;
-    gap: 24px;
+    justify-content:flex-start ;
+    gap: 40px;
 }
 
 .feature-item{
     display: flex;
     align-items: center;
-    gap: 0.875rem;
+    gap: 0.6rem;
 }
 
 /* ICON WRAPPER */
@@ -406,9 +417,10 @@ body{
 /* TEXT */
 
 .feature-content h4{
-    font-size: 16px;
+    font-size: 20px;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
     color: #111111;
-    margin-bottom: 0.25rem;
 }
 
 .feature-content p{
@@ -541,9 +553,8 @@ body{
 
 .info-card{
     display: flex;
-    align-items: flex-start;
+    align-items: center;
     gap: 1rem;
-
     position: relative;
     z-index: 2;
 }
@@ -589,14 +600,15 @@ body{
 
 .info-content h3{
     font-size: 20px;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
     line-height: 1;
     color: #111111;
-    margin-bottom: 0.5rem;
 }
 
 .info-content p{
     font-size: 14px;
-    line-height: 1.6;
+    line-height: 20px;
     color: #777777;
 }
 
@@ -616,7 +628,7 @@ body{
 
     border-radius: 2.5rem;
 
-    padding: 3rem 2rem;
+    padding: 3rem 4rem;
 
     display: flex;
     align-items: center;
@@ -659,8 +671,10 @@ body{
 }
 
 .flavour-left h2{
-    font-size: 1.25rem;
-    line-height: 1.2;
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 32px;
+    line-height: 36px;
+    font-weight: 400;
     color: #FFFFFF;
 
     margin-bottom: 1rem;
@@ -724,8 +738,6 @@ body{
 
 .flavour-card{
     width: 100%;
-    height: 11.5rem;
-
     background: #FFFDF8;
 
     border-radius: 1.5rem;
@@ -770,10 +782,11 @@ body{
 }
 
 .card-content h3{
-    font-size: 1rem;
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 24px;
+    font-weight: 400;
     color: #111111;
-
-    margin-bottom: 0.6rem;
+    margin-bottom: 4px;
 }
 
 .rating-row{
@@ -801,7 +814,9 @@ body{
 }
 
 .card-content h4{
-    font-size: 1.5rem;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 500;
+    font-size: 30px;
     color: #111111;
 
     margin-bottom: 1rem;
@@ -814,23 +829,23 @@ body{
 .order-btn{
     height: 2.8rem;
     padding: 0 1rem;
-
+    font-family: "Poppins", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
     border: none;
     border-radius: 999px;
-
     background: #EB2D45;
     color: white;
-
     display: inline-flex;
     align-items: center;
     gap: 0.7rem;
-
-    font-size: 0.85rem;
     cursor: pointer;
 }
 
-.order-btn span{
-    font-size: 1rem;
+.order-btn img{
+    width: 16px;
+    height: 16px;
+    filter: brightness(0) invert(1);
 }
 
 /* =========================  SIDE SHAPES ========================= */
